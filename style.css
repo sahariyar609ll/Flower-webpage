@@ -1,13 +1,14 @@
 .open-sans-font {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800px;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
+
 /* banner section styles */
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,21 +16,26 @@
     padding: 70px;
     /* max-width: 1500px; */
     /* height: 500px; */
+    margin-bottom: 110px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     text-align: right;
     width: 500px;
-    
+
 }
-.banner-title{
+
+.banner-title {
     font-size: 80px;
     font-weight: 800;
 }
-.banner-description{
+
+.banner-description {
     color: #272727;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #E55473;
     color: white;
     font-weight: bold;
@@ -37,15 +43,60 @@
     border: none;
     padding: 20px;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     cursor: pointer;
 }
 
+/* featured section styles */
+.featured-title {
+    font-size: 30px;
+    font-weight: 700px;
+    text-align: center;
+}
 
+.featured-description {
+    color: #272727;
+    text-align: center;
+}
 
+.flowers {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+}
 
-
-
+.flower-1 {
+    background-color: rgba(167, 33, 98, 0.15);
+    width: 400px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /* align-items: center; */
+    text-align: center;
+}
+.flower-1 img{
+    position: relative;
+    top: 48px;
+}
+.flower-2 {
+    background-color: rgba(5, 151, 160, 0.15);
+    width: 400px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    text-align: center;
+}
+.flower-2 img{
+    position: relative;
+    top: 60px;
+}
+.flower-3 {
+    background-color: rgba(71, 125, 17, 0.15);
+    width: 400px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    text-align: center;
+}
 
 
 
@@ -76,13 +127,21 @@
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .banner{
+    .banner, .flowers{
         flex-direction: column;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 50px;
     }
-    .banner img{
+
+    .banner img {
         width: 100%;
+    }
+    .flower-1, .flower-2, .flower-3{
+        width: 100%px;
+        height: 500px;
+        position: relative;
+        top: 80px;
     }
 }
